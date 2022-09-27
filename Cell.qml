@@ -13,6 +13,7 @@ Rectangle {
     function changeNumber(flag){
         if(flag)
             value = (value + 1) % 9;
+        puzzle[rowIndex*9+columnIndex]=value;
     }
 
     Text {
